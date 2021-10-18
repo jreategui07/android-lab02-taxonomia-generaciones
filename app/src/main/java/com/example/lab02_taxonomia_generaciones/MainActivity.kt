@@ -13,17 +13,29 @@ class MainActivity : AppCompatActivity() {
 
             var yearOfBirth = edtYearOfBirth.text.toString().toInt()
 
-            tvPopulationNumber.text = when(yearOfBirth) {
+            when(yearOfBirth) {
+                in 1930 .. 1948 -> {
+                    tvPopulationNumber.text = "6.300.000"
+                    tvCharacteristicFeature.text = "Austeridad"
+                }
+                in 1949 .. 1968 -> {
+                    tvPopulationNumber.text = "12.200.000"
+                    tvCharacteristicFeature.text = "Ambición"
+                }
                 in 1969 .. 1980 -> {
-                    "GENERACIÓN X"
+                    tvPopulationNumber.text = "9.300.000"
+                    tvCharacteristicFeature.text = "Obsesión por el éxito"
                 }
                 in 1981 .. 1993 -> {
-                    "GENERACIÓN Y"
+                    tvPopulationNumber.text = "7.200.000"
+                    tvCharacteristicFeature.text = "Frustración"
                 }
                 in 1994 .. 2010 -> {
-                    "GENERACIÓN Z"
+                    tvPopulationNumber.text = "7.800.000"
+                    tvCharacteristicFeature.text = "Irreverencia"
                 } else -> {
-                    "No perteneces a ninguna generación"
+                    tvPopulationNumber.text = "No se encontraron resultados"
+                    tvCharacteristicFeature.text = "No se encontraron resultados"
                 }
             }
 
