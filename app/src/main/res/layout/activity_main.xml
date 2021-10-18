@@ -6,29 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="[Resultado]"
-        android:textSize="17sp"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnVerificationButton"
-        app:layout_constraintVertical_bias="0.113" />
-
     <EditText
         android:id="@+id/edtYearOfBirth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:ems="10"
-        android:inputType="number"
-        android:hint="Ingrese el año"
+        android:layout_marginTop="88dp"
         android:background="@drawable/shape_rectangle"
+        android:ems="10"
+        android:hint="Ingrese el año"
+        android:inputType="number"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -39,11 +25,38 @@
         android:id="@+id/btnVerificationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:text="Verificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtYearOfBirth" />
+
+    <TextView
+        android:id="@+id/tvPopulationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Número de población de las generaciones]"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerificationButton"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <TextView
+        android:id="@+id/tvCharacteristicFeature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="[Rasgo característico]"
+        android:textColor="#000000"
+        android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtYearOfBirth" />
+        app:layout_constraintTop_toBottomOf="@+id/tvPopulationNumber" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
